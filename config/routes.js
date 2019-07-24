@@ -9,6 +9,6 @@
  */
 
 module.exports.routes = {
-
-
+    'POST /appraisal/request': 'appraisal/request',
+    'POST /appraisal/complete': 'appraisal/complete-info'
 };

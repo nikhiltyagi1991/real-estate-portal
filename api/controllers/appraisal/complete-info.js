@@ -1,3 +1,4 @@
+const axios = require('axios');
 module.exports = {
 
 
@@ -45,7 +46,7 @@ module.exports = {
             });
         if (updatedAppraisal) {
             try {
-                let response = await axios.post('http://insuranceservice/abcd', {
+                let response = await axios.post('http://localhost:1331/insurance/quote', {
                     mortid: updatedAppraisal.mortid,
                     appraisalValue: updatedAppraisal.appraisalValue,
                     m1sid: updatedAppraisal.m1sid
