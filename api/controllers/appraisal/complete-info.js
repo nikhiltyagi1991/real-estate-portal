@@ -51,7 +51,7 @@ module.exports = {
                     appraisalValue: updatedAppraisal.appraisalValue,
                     m1sid: updatedAppraisal.m1sid
                 });
-                return exits.invalid({ message: 'Appraisal Successful' })
+                return exits.success({ message: 'Appraisal Successful' })
             } catch (e) {
                 return exits.invalid({ message: 'Unable to contact insurance service.' })
             }
